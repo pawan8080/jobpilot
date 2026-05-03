@@ -1,0 +1,62 @@
+{
+  "name": "Pawan Patel",
+  "current_role": "Business Intelligence Developer at Avenue Living",
+  "years_experience": 4,
+  "headline": "BI Developer & Data Analyst with 4+ years delivering end-to-end analytics across real estate, finance, retail, and robotics. Hands-on with LLM-assisted analytics and AI-integrated reporting.",
+  "target_roles": [
+    "Senior Business Intelligence Developer",
+    "BI Developer",
+    "Data Analyst",
+    "Analytics Engineer",
+    "BI Consultant",
+    "AI/Analytics Engineer"
+  ],
+  "target_industries_priority": [
+    "Real Estate / PropTech",
+    "Finance / FinTech",
+    "Retail",
+    "Any data-heavy SaaS"
+  ],
+  "skills": {
+    "languages": ["SQL (Snowflake, T-SQL, BigQuery)", "Python (Pandas, NumPy, scikit-learn)", "R"],
+    "bi_tools": ["Qlik Sense", "Power BI (DAX, Power Query)", "Tableau", "IBM Cognos", "Looker", "Google Data Studio"],
+    "ai_llm": ["Prompt engineering", "LLM-assisted data workflows (GPT-4, Claude)", "AI-driven KPI analysis", "Copilot for BI"],
+    "data_engineering": ["Azure Data Factory (ADF)", "dbt", "Apache Airflow", "ETL/ELT", "Snowflake", "SCD Types 1 & 2", "QVD optimization"],
+    "cloud": ["Microsoft Azure", "GCP (BigQuery, GCS)", "AWS (S3, Redshift basics)"],
+    "devops": ["GitLab CI/CD", "YAML pipelines", "Git", "Azure DevOps"],
+    "modeling": ["Star/Snowflake Schema", "Fact/Dimension tables", "Incremental loads", "Truncate-and-Load"],
+    "domain": ["Real estate operations", "Investment analytics", "Yardi", "Sitelink"]
+  },
+  "key_accomplishments": [
+    "Built Qlik Sense KPI dashboards for bonus payout calculations across Operations teams at a real estate firm, integrating PII securely with automated QA checks",
+    "Designed dynamic financial reports combining Sitelink and Yardi datasets to produce lender-ready reports for the Investments team",
+    "Built and maintained full GitLab CI/CD pipelines for ADF deployments across Dev/UAT/Prod via YAML",
+    "Architected a semantic data warehouse layer with fact/dimension modeling (SCD Types 1 & 2), supporting both backend reliability and sub-2 second dashboard load times",
+    "Integrated LLM-assisted (GPT-4) data summarization into Power BI reports, reducing analyst commentary time by 40%",
+    "Led migration of Qlik NPrinting from on-prem to Azure-hosted infrastructure, reducing server maintenance costs by 30%",
+    "Co-built data-driven pricing dashboards visualizing regression and deep learning outputs for insurance uptake, protection plans, intro rates",
+    "Led data migration and re-modeling for properties moving from Sitelink to Yardi, including stored proc development and post-migration KPI validation"
+  ],
+  "personal_projects": [
+    "LLM-Powered Insight Summarizer: Python pipeline using GPT-4 to auto-generate plain-language insights from Qlik/Power BI exports, reducing time-to-narrative by 50%",
+    "AskEstate: Text-to-SQL BI app for real estate data, powered by Claude with safety guardrails and auto-charting"
+  ],
+  "education": [
+    "Analytics for Business Decision Making, Mohawk College, Hamilton ON (2024)",
+    "B.Tech Computer Science, Birla Vishwakarma Mahavidyalaya, Gujarat IN (2018)"
+  ],
+  "certifications": [
+    "IBM Business Intelligence Analyst — Foundations",
+    "Heinrich J. Klein Scholarship — $12,500",
+    "Patent: Quadruped Canine Robot (App. No. 202221001158, March 2022)",
+    "ECBA (Entry Certificate in Business Analysis) — In Progress",
+    "Microsoft Certified: Data Analyst Associate (Power BI) — Pursuing"
+  ],
+  "location": "Canada (open to remote / Calgary area / Toronto area)",
+  "differentiators": [
+    "Cross-domain BI experience (real estate, finance, retail, robotics)",
+    "Active practitioner of LLM-assisted BI workflows — not just theoretical familiarity",
+    "Full-stack BI: from raw data and ETL through to executive dashboards and email automation",
+    "Patent holder and published researcher (robotics)"
+  ]
+}
