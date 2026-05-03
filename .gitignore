@@ -1,0 +1,22 @@
+# Secrets
+.env
+*.key
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Database (user's personal pipeline)
+*.db
+jobpilot.db
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
