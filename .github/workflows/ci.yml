@@ -1,1 +1,52 @@
+name: CI
 
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install ruff
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Syntax check
+        run: |
+          python -m py_compile app.py database.py agent.py fetcher.py
+
+      - name: Test database setup
+        run: |
+          python -c "
+          import database as db
+          db.init_db()
+          jid = db.insert_job({
+              'company': 'Test Co',
+              'title': 'BI Dev',
+              'description': 'A test job description.',
+              'fit_score': 8,
+          })
+          assert jid > 0
+          db.update_status(jid, 'applied')
+          j = db.get_job(jid)
+          assert j['status'] == 'applied'
+          assert j['applied_date'] is not None
+          metrics = db.get_metrics()
+          assert metrics['total_jobs'] == 1
+          print('Database tests pass')
+          "
